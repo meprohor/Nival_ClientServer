@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
+    </contributor>
+    <created>2018-08-19T19:00:18</created>
+    <modified>2018-08-19T19:00:18</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Plane-mesh" name="Plane">
+      <mesh>
+        <source id="Plane-mesh-positions">
+          <float_array id="Plane-mesh-positions-array" count="96">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0 -0.450393 0.450393 -0.02771353 -0.450393 -0.450393 -0.02771353 0.450393 -0.450393 -0.02771353 0.450393 0.450393 -0.02771353 -0.3228682 0.3228682 -0.02771353 -0.3228682 -0.3228682 -0.02771353 0.3228682 -0.3228682 -0.02771353 0.3228682 0.3228682 -0.02771353 -0.2052455 0.2052455 0 -0.2052455 -0.2052455 0 0.2052455 -0.2052455 0 0.2052455 0.2052455 0 0.2270291 0.3054108 -0.02360033 -0.2270291 0.3054108 -0.02360033 -0.1443212 0.2227029 -0.004113137 0.1443212 0.2227029 -0.004113137 -0.2270291 -0.3054108 -0.02360033 0.2270291 -0.3054108 -0.02360033 0.1443212 -0.2227029 -0.004113137 -0.1443212 -0.2227029 -0.004113137 0.3054108 -0.2270291 -0.02360033 0.3054108 0.2270291 -0.02360033 0.2227029 0.1443212 -0.004113137 0.2227029 -0.1443212 -0.004113137 -0.3054108 0.2270291 -0.02360033 -0.3054108 -0.2270291 -0.02360033 -0.2227029 -0.1443212 -0.004113137 -0.2227029 0.1443212 -0.004113137</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-normals">
+          <float_array id="Plane-mesh-normals-array" count="129">0 0 1 -0.4877136 0 0.8730037 0.4877136 0 0.8730037 0 -0.487713 0.873004 0 0.487713 0.873004 0 0 1 0 0 1 0 0.2293336 0.973348 0 0.2293344 0.9733477 0 0.2293347 0.9733477 0 0.2293345 0.9733477 0 -0.2293336 0.973348 0 -0.2293344 0.9733477 0 -0.2293347 0.9733477 0 -0.2293345 0.9733477 0.2293344 0 0.9733477 0.2293342 0 0.9733477 0.2293342 0 0.9733477 0.2293342 0 0.9733477 -0.2293344 0 0.9733477 -0.2293342 0 0.9733477 -0.2293342 0 0.9733477 -0.2293342 0 0.9733477 -0.4877137 0 0.8730037 0.4877137 0 0.8730037 0 -0.4877141 0.8730034 0 0.4877141 0.8730034 0 0.2293348 0.9733476 0 0.2293341 0.9733478 0 0.2293336 0.973348 0 0.2293341 0.9733478 0 -0.2293348 0.9733476 0 -0.2293341 0.9733478 0 -0.2293336 0.973348 0 -0.2293341 0.9733478 0.2293343 0 0.9733478 0.2293344 1.39832e-7 0.9733478 0.2293342 0 0.9733477 0.2293344 -1.39832e-7 0.9733478 -0.2293343 0 0.9733478 -0.2293344 -1.39832e-7 0.9733478 -0.2293342 0 0.9733477 -0.2293344 1.39832e-7 0.9733478</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-normals-array" count="43" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane-mesh-vertices">
+          <input semantic="POSITION" source="#Plane-mesh-positions"/>
+        </vertices>
+        <triangles count="50">
+          <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <p>7 0 10 0 6 0 3 1 6 1 1 1 0 2 4 2 2 2 2 3 7 3 3 3 1 4 5 4 0 4 5 5 8 5 4 5 4 6 11 6 7 6 6 6 9 6 5 6 14 6 12 6 13 6 17 7 11 7 8 7 12 8 17 8 8 8 19 9 12 9 15 9 16 10 15 10 11 10 21 11 9 11 10 11 14 12 21 12 10 12 23 13 14 13 13 13 20 14 13 14 9 14 25 15 10 15 11 15 15 16 25 16 11 16 27 17 15 17 14 17 24 18 14 18 10 18 29 19 8 19 9 19 13 20 29 20 9 20 31 21 13 21 12 21 28 22 12 22 8 22 7 6 11 6 10 6 3 23 7 23 6 23 0 24 5 24 4 24 2 25 4 25 7 25 1 26 6 26 5 26 5 6 9 6 8 6 4 6 8 6 11 6 6 6 10 6 9 6 14 6 15 6 12 6 17 27 16 27 11 27 12 28 18 28 17 28 19 29 18 29 12 29 16 30 19 30 15 30 21 31 20 31 9 31 14 32 22 32 21 32 23 33 22 33 14 33 20 34 23 34 13 34 25 35 24 35 10 35 15 36 26 36 25 36 27 37 26 37 15 37 24 38 27 38 14 38 29 39 28 39 8 39 13 40 30 40 29 40 31 41 30 41 13 41 28 42 31 42 12 42</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Plane_001-mesh" name="Plane.001">
+      <mesh>
+        <source id="Plane_001-mesh-positions">
+          <float_array id="Plane_001-mesh-positions-array" count="48">0.2270291 0.3054108 -0.02360033 -0.2270291 0.3054108 -0.02360033 -0.1443212 0.2227029 -0.004113137 0.1443212 0.2227029 -0.004113137 -0.2270291 -0.3054108 -0.02360033 0.2270291 -0.3054108 -0.02360033 0.1443212 -0.2227029 -0.004113137 -0.1443212 -0.2227029 -0.004113137 0.3054108 -0.2270291 -0.02360033 0.3054108 0.2270291 -0.02360033 0.2227029 0.1443212 -0.004113137 0.2227029 -0.1443212 -0.004113137 -0.3054108 0.2270291 -0.02360033 -0.3054108 -0.2270291 -0.02360033 -0.2227029 -0.1443212 -0.004113137 -0.2227029 0.1443212 -0.004113137</float_array>
+          <technique_common>
+            <accessor source="#Plane_001-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_001-mesh-normals">
+          <float_array id="Plane_001-mesh-normals-array" count="24">0 0.2293344 0.9733477 0 -0.2293344 0.9733477 0.2293343 0 0.9733478 -0.2293343 0 0.9733478 0 0.2293343 0.9733478 0 -0.2293343 0.9733478 0.2293342 0 0.9733478 -0.2293342 0 0.9733478</float_array>
+          <technique_common>
+            <accessor source="#Plane_001-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane_001-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_001-mesh-positions"/>
+        </vertices>
+        <triangles count="8">
+          <input semantic="VERTEX" source="#Plane_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_001-mesh-normals" offset="1"/>
+          <p>1 0 3 0 0 0 5 1 7 1 4 1 9 2 11 2 8 2 13 3 15 3 12 3 1 4 2 4 3 4 5 5 6 5 7 5 9 6 10 6 11 6 13 7 14 7 15 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Ground" name="Ground" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Plane-mesh" name="Ground"/>
+      </node>
+      <node id="Ground_Lights" name="Ground_Lights" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Plane_001-mesh" name="Ground_Lights"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
